@@ -12,11 +12,10 @@ import { Providers } from "./providers";
 const font = Open_Sans({ subsets: ["latin"], variable: "--font-sans" });
 
 export const metadata: Metadata = {
-  title: "internect.info - Resolve a Bluesky handle",
+  title: "inter.epqu.ca - Resolve a Bluesky handle",
   description:
-    "Find technical information about a Bluesky account from its handle or DID.",
-  metadataBase: new URL("https://internect.info"),
-  other: { "google-adsense-account": "ca-pub-6921696462479931" },
+    "internect.info, but with did:web support",
+  metadataBase: new URL("https://inter.epqu.ca")
 };
 
 export default function RootLayout({

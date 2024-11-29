@@ -43,14 +43,14 @@ export const generateMetadata = async ({
     const profile = await agent.getProfile({ actor: did });
 
     return {
-      title: `@${profile.data.handle} - internect.info`,
+      title: `@${profile.data.handle} - inter.epqu.ca`,
       description: `Information about ${
         profile.data.displayName || `@${profile.data.handle}`
       }`,
     };
   } catch {
     return {
-      title: `@${did} - internect.info`,
+      title: `@${did} - inter.epqu.ca`,
       description: `Information about @${did}`,
     };
   }
@@ -112,6 +112,8 @@ export default async function InfoScreen({ params: { did } }: Props) {
     serviceEndpoint = `🍄 ${mushroom[0].toLocaleUpperCase()}${mushroom.slice(
       1,
     )}`;
+  } else {
+    serviceEndpoint = serviceEndpoint.replace("https://", "");
   }
 
   return (
