@@ -142,7 +142,7 @@ export default async function InfoScreen({ params: { did } }: Props) {
         ) : (
           <>
             <img
-              src={profile.data.avatar?.replace("avatar", "avatar_thumbnail")}
+              src={profile.data.avatar?.replace("avatar", "avatar_thumbnail") ?? "/missing-avatar.svg"}
               alt={profile.data.displayName || profile.data.handle}
               className="size-14 rounded-full bg-slate-100 text-transparent"
             />

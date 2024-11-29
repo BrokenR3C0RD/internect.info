@@ -88,7 +88,7 @@ const Fields = () => {
                       src={profile.avatar?.replace(
                         "avatar",
                         "avatar_thumbnail",
-                      )}
+                      ) ?? "/missing-avatar.svg"}
                       alt={profile.handle}
                       className="size-6 rounded-full bg-slate-50 text-transparent"
                     />
